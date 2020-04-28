@@ -13,6 +13,7 @@
 qcom,wingtech-feimaotui-4v4-3030mah-data {
 	qcom,default-rbatt-mohm = <140>;
 	qcom,max-voltage-uv = <4400000>;
+	qcom,fastchg-current-ma = <3500>;
 	qcom,rbatt-capacitive-mohm = <50>;
 	qcom,v-cutoff-uv = <3400000>;
 	qcom,chg-term-ua = <100000>;

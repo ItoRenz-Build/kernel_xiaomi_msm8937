@@ -15,6 +15,7 @@
 qcom,mingmei-4v4-3000mah-data {
 	qcom,default-rbatt-mohm = <116>;
 	qcom,max-voltage-uv = <4400000>;
+	qcom,fastchg-current-ma = <3500>;
 	qcom,fcc-mah = <3000>;
 	qcom,rbatt-capacitive-mohm = <10>;
 	qcom,v-cutoff-uv = <3400000>;

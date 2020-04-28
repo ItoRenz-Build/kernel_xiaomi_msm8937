@@ -6,6 +6,7 @@ qcom,Wingtech4000-batterydata {
 	qcom,default-rbatt-mohm = <112>;
 	qcom,fcc-mah = <4000>;
 	qcom,max-voltage-uv = <4400000>;
+	qcom,fastchg-current-ma = <3500>;
 	qcom,rbatt-capacitive-mohm = <50>;
 	qcom,v-cutoff-uv = <3400000>;
 

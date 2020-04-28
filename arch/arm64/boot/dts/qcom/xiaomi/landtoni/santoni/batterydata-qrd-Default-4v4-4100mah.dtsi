@@ -1,6 +1,7 @@
 
 qcom,2312470_wingtech_a12atl_4000mah_default {
 	qcom,max-voltage-uv = <4400000>;
+	qcom,fastchg-current-ma = <3500>;
 	qcom,nom-batt-capacity-mah = <4000>;
 	qcom,batt-id-kohm = <1>;
 	qcom,battery-beta = <4150>;
