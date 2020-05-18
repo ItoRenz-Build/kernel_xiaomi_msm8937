@@ -1964,6 +1964,7 @@ static const struct snd_kcontrol_new msm_dig_snd_controls[] = {
 	SOC_SINGLE_SX_TLV("RX2 Digital Volume",
 		MSM89XX_CDC_CORE_RX2_VOL_CTL_B2_CTL,
 		0, -84, 40, digital_gain),
+#endif		
 	SOC_SINGLE_SX_TLV("RX3 Digital Volume",
 		MSM89XX_CDC_CORE_RX3_VOL_CTL_B2_CTL,
 		0, -84, 40, digital_gain),
