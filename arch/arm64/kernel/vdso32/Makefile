@@ -95,9 +95,11 @@ else
 VDSO_CFLAGS += -marm
 endif
 
-ifeq ($(cc-name),clang)
 # Snapdragon LLVM specific warning
 VDSO_CFLAGS += $(call cc32-disable-warning, vectorizer-no-neon)
+
+ifdef CONFIG_ARCH_MSM8953
+VDSO_CFLAGS += -mcpu=cortex-a53 -Wa,-mcpu=cortex-a53 -mtune=cortex-a53
 endif
 
 VDSO_AFLAGS := $(VDSO_CAFLAGS)
