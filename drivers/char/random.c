@@ -1927,7 +1927,7 @@ static long random_ioctl(struct file *f, unsigned int cmd, unsigned long arg)
 		if (crng_init < 2)
 			return -ENODATA;
 		crng_reseed(&primary_crng, &input_pool);
-		WRITE_ONCE(crng_global_init_time, jiffies - 1);
+		crng_global_init_time = jiffies - 1;
 		return 0;
 	default:
 		return -EINVAL;
