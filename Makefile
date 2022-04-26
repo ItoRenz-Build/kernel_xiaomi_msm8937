@@ -544,6 +544,7 @@ CLANG_FLAGS	+= $(call cc-option, -Wno-misleading-indentation)
 CLANG_FLAGS	+= $(call cc-option, -Wno-bool-operation)
 KBUILD_CFLAGS	+= $(CLANG_FLAGS)
 KBUILD_AFLAGS	+= $(CLANG_FLAGS)
+KBUILD_CFLAGS   += $(call cc-disable-warning, unused-but-set-variable)
 ifeq ($(ld-name),lld)
 KBUILD_CFLAGS	+= -fuse-ld=lld
 endif
