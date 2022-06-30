@@ -1024,7 +1024,7 @@ grow_dev_page(struct block_device *bdev, sector_t block,
 	/*
 	 * Allocate some buffers for this page
 	 */
-	bh = alloc_page_buffers(page, size, false);
+	bh = alloc_page_buffers(page, size, 0);
 	if (!bh)
 		goto failed;
 
