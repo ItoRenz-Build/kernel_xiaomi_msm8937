@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.9.324 Kernel Configuration
+# Linux/arm64 4.9.325 Kernel Configuration
 #
 CONFIG_ARM64=y
 CONFIG_64BIT=y
@@ -3196,6 +3196,8 @@ CONFIG_QCOM_KGSL_IOMMU=y
 #
 # ACP (Audio CoProcessor) Configuration
 #
+CONFIG_KLAPSE=y
+CONFIG_KLAPSE_MDSS=y
 
 #
 # Frame buffer Devices
@@ -5509,5 +5511,3 @@ CONFIG_SBITMAP=y
 CONFIG_QMI_ENCDEC=y
 # CONFIG_QMI_ENCDEC_DEBUG is not set
 # CONFIG_NO_TECHPACK_AUDIO is not set
-CONFIG_KLAPSE=y
-CONFIG_KLAPSE_MDSS=y
